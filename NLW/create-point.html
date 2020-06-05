@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um ponto de coleta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/create-point.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+
+</head>
+<body>
+    <!--(#page-home) Para criar uma div com id-->
+    <div id="page-create-point">
+             <header>
+                 <img src="/NLW/assets/logo.svg" alt="Logomarca">
+                 <a href="http://google.com.br"><span></span>Voltar para home</a> 
+            </header>
+
+            <form action="">
+
+                <h1>Cadstro do ponto de coleta</h1>
+
+                <!--Coleção de campos-->
+                <fieldset>
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <!--Cria o label para input de dados-->
+                    <div class="field">
+                        <label for="">Nome da entidade</label>
+                        <input type="text" name="name">
+                    </div>
+
+                    <div class="field-group">
+
+                        <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
+                        <div class="field">                         
+                            <label for="address">Endereço</label>
+                            <input type="text" name="address">
+                        </div>
+                        <div class="field">
+                            <label for="address">Número/Complemento</label>
+                            <input type="text" name="address2">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+
+                        <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
+                        <div class="field">
+                           
+                            <label for="state">Estado</label>
+                            <select name="state">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled>
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                        </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                </fieldset>
+
+                <button type="submit">Cadatrar ponto de coleta</button>
+
+            </form>
+                
+            
+    </div>
+    
+           
+    <!--
+        Comentario em html
+    -->
+</body>
+</html>
