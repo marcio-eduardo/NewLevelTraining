@@ -36,7 +36,6 @@ form {
     background-color:  white;
     
     margin: 80px auto;
-    
 
     /* Preenchimento */
     padding:  64px;
@@ -80,19 +79,15 @@ form .field-group {
 
 form input, form select {
     background-color: #f0f0f5;
-    
 
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
 
     border-radius: 8px;
-    
 
     /* outline: none;  desabilita a margem que identifica o campo onde  se encontra o cursor */
 }
-
-
 
 form select {
     /* retira a caracteristica de campo select. evita problemas de estilização no chrome e firefox*/
