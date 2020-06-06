@@ -17,68 +17,109 @@
 <body>
     <!--(#page-home) Para criar uma div com id-->
     <div id="page-create-point">
-             <header>
+        <header>
                  <img src="/NLW/assets/logo.svg" alt="Logomarca">
                  <a href="http://google.com.br"><span></span>Voltar para home</a> 
-            </header>
+        </header>
 
-            <form action="">
+        <form action="">
 
-                <h1>Cadstro do ponto de coleta</h1>
+            <h1>Cadastro do ponto de coleta</h1>
 
-                <!--Coleção de campos-->
-                <fieldset>
-                    <legend>
-                        <h2>Dados da entidade</h2>
-                    </legend>
+             <!--Coleção de campos-->
+             <fieldset>
+                <legend>
+                     <h2>Dados da entidade</h2>
+                </legend>
 
-                    <!--Cria o label para input de dados-->
+                <!--Cria o label para input de dados-->
+                <div class="field">
+                    <label for="">Nome da entidade</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="field-group">
+
+                    <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
+                    <div class="field">                         
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" required>
+                    </div>
+
                     <div class="field">
-                        <label for="">Nome da entidade</label>
-                        <input type="text" name="name">
+                        <label for="address">Número/Complemento</label>
+                        <input type="text" name="address2" required>
                     </div>
+                </div>
 
-                    <div class="field-group">
+                <div class="field-group">
 
-                        <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
-                        <div class="field">                         
-                            <label for="address">Endereço</label>
-                            <input type="text" name="address">
-                        </div>
-                        <div class="field">
-                            <label for="address">Número/Complemento</label>
-                            <input type="text" name="address2">
-                        </div>
-                    </div>
-
-                    <div class="field-group">
-
-                        <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
-                        <div class="field">
+                    <!-- .field* (cria duas div's) e label+input (inserir label e input de uma vez)-->
+                    <div class="field">
                            
-                            <label for="state">Estado</label>
-                            <select name="uf">
-                                <option value="">Selecione o Estado</option>
-                                
-                            </select>
+                        <label for="state">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>                               
+                        </select>
 
-                            <input type="hidden" name="state">
-                        </div>
+                         <input type="hidden" name="state">
+                    </div>
 
-                        <div class="field">
-                            <label for="city">Cidade</label>
-                            <select name="city" disabled>
-                                <option value="">Selecione a Cidade</option>
-                            </select>
-                        </div>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                     </div>
 
-                </fieldset>
+            </fieldset>
 
-                <fieldset>
+             <fieldset>
+                 <legend>
+                    <h2>Ítens de coleta</h2>
+                 </legend>
 
-                </fieldset>
 
-                <button type="submit">Cadatrar ponto de coleta</button>
+                <div class="items-grid">
+                    <li data-id="1" class="selected">
+                        <img src="/NLW/assets/lampadas.svg" alt="Lâmpadas">
+                        <span>Lâmpadas</span>
+                    </li>
+
+                    <li data-id="2">
+                        <img src="/NLW/assets/baterias.svg" alt="Pilhas e Baterias">
+                        <span>Pilhas e Baterias</span>
+                    </li>
+
+                     <li data-id="3">
+                        <img src="/NLW/assets/papeis-papelao.svg" alt="Papéis e Papelão">
+                        <span>Papéis e Papelão</span>
+                    </li>
+
+                    <li data-id="4">
+                        <img src="/NLW/assets/eletronicos.svg" alt="Resíduos Eletrônicos">
+                        <span>Resíduos Eletrônicos</span>
+                    </li>
+
+                    <li data-id="5">
+                        <img src="/NLW/assets/organicos.svg" alt="Resíduos Orgânicos">
+                        <span>Resíduos Orgânicos</span>
+                    </li>
+
+                    <li data-id="6">
+                        <img src="/NLW/assets/oleo.svg" alt="Óleo de Cozinha">
+                        <span>Óleo de Cozinha</span>
+                    </li>
+                    
+
+                </div>
+
+
+            </fieldset>
+
+
+
+        <button type="submit">Cadatrar ponto de coleta</button>
 
             </form>
                 
