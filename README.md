@@ -1,6 +1,6 @@
 # New Level Training
 
-Front-end
+##  Front-end
 - Programação WEB
     - O que é programação?
         - Ensinar computador
@@ -45,7 +45,7 @@ Front-end
 - CSS
 - Javascript
 
-[Back-end](https://www.notion.so/Back-end-a5747fd6bfa34e799e6e0ded51f5ec63)
+##  Back-end
 - Responsabilidades
     - Receber pedidos do cliente
     - Preparar os pedidos ( Regras de Negócio )
