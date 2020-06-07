@@ -1,0 +1,25 @@
+{
+  "name": "NextLevelTraining",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon NLW/src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcio-eduardo/NextLevelTraining.git"
+  },
+  "keywords": [],
+  "author": "Marcio da Silva Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcio-eduardo/NextLevelTraining/issues"
+  },
+  "homepage": "https://github.com/marcio-eduardo/NextLevelTraining#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
